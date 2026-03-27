@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Prakarya Kelas 11</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="app-container">
+        <header>
+            <h1>EduKuis</h1>
+            <p>Prakarya & Kewirausahaan Kelas 11</p>
+        </header>
+
+        <div id="start-screen" class="screen active">
+            <h2>Uji Pengetahuanmu!</h2>
+            <p>Jawab 10 pertanyaan tentang Kerajinan Bahan Limbah Berbentuk Bangun Datar dan Kewirausahaan Dasar.</p>
+            <button id="start-btn" class="btn primary-btn">Mulai Kuis</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="progress-bar">
+                <div id="progress-indicator"></div>
+            </div>
+            <div class="quiz-header">
+                <span id="question-number">Soal 1/10</span>
+                <span id="score-display">Skor: 0</span>
+            </div>
+            
+            <div id="question-image-container" class="question-image-container hidden">
+                <img id="question-image" src="" alt="Gambar Soal">
+            </div>
+            <h2 id="question-text" class="question-text">Pertanyaan akan muncul di sini?</h2>
+            
+            <div id="options-container" class="options-container">
+                <!-- Options will be injected here -->
+            </div>
+            
+            <div id="feedback-container" class="feedback-container hidden">
+                <div id="feedback-icon"></div>
+                <p id="feedback-text"></p>
+            </div>
+
+            <button id="next-btn" class="btn secondary-btn hidden">Selanjutnya</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>Kuis Selesai!</h2>
+            <div class="score-circle">
+                <div class="score-text">
+                    <span id="final-score">0</span>
+                    <span class="score-max">/ 100</span>
+                </div>
+            </div>
+            <p id="result-message">Luar biasa!</p>
+            <button id="restart-btn" class="btn primary-btn">Coba Lagi</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
